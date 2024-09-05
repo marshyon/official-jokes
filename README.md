@@ -22,3 +22,29 @@ src/
 └── routes
     └── web.php
 ```
+
+to install add this to `compose.json` :
+
+```json
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/marshyon/official-jokes.git"
+        }
+    ],
+```
+
+and set the following also in `composer.json` :
+
+```json
+    "minimum-stability": "dev",
+```
+
+following this with 
+
+```bash
+composer require marshyon/official-jokes
+```
+
+and then try to get to the `http://laravel.test/joke` route of your running Laravel app, substituing this path to suit your environment
+
