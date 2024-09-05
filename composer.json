@@ -1,0 +1,25 @@
+{
+    "name": "marshyon/official-jokes",
+    "description": "a laravel package that gets random official joke api jokes",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jon Brookes"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.9.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Marshyon\\OfficialJokes\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Marshyon\\OfficialJokes\\Providers\\JokesProvider"
+            ]
+        }
+    }
+}
